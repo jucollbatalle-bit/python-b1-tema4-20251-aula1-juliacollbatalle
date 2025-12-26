@@ -44,11 +44,11 @@ Exemple:
 
 
 def squared_sum_ram(numbers_list):
-    result = []
+    total = 0
     for number in numbers_list:
         square = number ** 2
-        result.append(square)
-    return result
+        total = total + square
+    return total
 
 
 def squared_sum_heap(numbers_list):
