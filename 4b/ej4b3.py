@@ -95,5 +95,4 @@ def create_list(length_list):
 
     return ram_list, heap_list
 
-result = create_list(6)
-print(result)
+print(create_list(8))
