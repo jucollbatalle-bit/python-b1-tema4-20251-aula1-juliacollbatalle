@@ -50,12 +50,17 @@ Exemple:
          30
 
 """
+import inspect
 
 def read_and_write():
-    # Write here your code
-    pass
+    name = input('Insert your name: ')
+    age = int(input('Insert your age: '))
+
+code = inspect.getsource(read_and_write)
+
+with open('file.txt', 'w') as f:
+    f.write(code)
 
 
-# Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script
-# Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# read_and_write()
+
+read_and_write()
